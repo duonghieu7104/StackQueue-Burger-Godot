@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbu1ynp07orml"]
+
+[ext_resource type="Script" path="res://script/re_source.gd" id="1_sxopd"]
+
+[node name="save_load" type="Node"]
+script = ExtResource("1_sxopd")

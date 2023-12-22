@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://db3tvqf4jmu1r"]
+
+[ext_resource type="Script" path="res://script/message.gd" id="1_ra5i2"]
+
+[node name="message" type="Node2D"]
+script = ExtResource("1_ra5i2")
+
+[node name="message" type="Label" parent="."]
+offset_left = -126.0
+offset_top = -41.0
+offset_right = 121.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0.964706, 0, 1)
+theme_override_font_sizes/font_size = 50
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

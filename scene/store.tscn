@@ -1,0 +1,242 @@
+[gd_scene load_steps=6 format=3 uid="uid://1pejx18dbh7t"]
+
+[ext_resource type="Script" path="res://script/store.gd" id="1_57sca"]
+[ext_resource type="Texture2D" uid="uid://jxs1lfdqpsoj" path="res://asset/GUI/gui_kitchen.png" id="2_go6no"]
+[ext_resource type="Texture2D" uid="uid://dq8p5ox380h15" path="res://asset/iconbutton/tick_.png" id="3_saw2j"]
+[ext_resource type="Script" path="res://script/Node.gd" id="4_mlnux"]
+[ext_resource type="AudioStream" uid="uid://b3rswav83e3an" path="res://sound/pickupCoin.wav" id="5_ywejk"]
+
+[node name="kitchen" type="Node2D"]
+script = ExtResource("1_57sca")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(577, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_go6no")
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 312.0
+offset_top = 132.0
+offset_right = 441.0
+offset_bottom = 197.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 314.0
+offset_top = 214.0
+offset_right = 443.0
+offset_bottom = 279.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 304.0
+offset_top = 294.0
+offset_right = 433.0
+offset_bottom = 359.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 310.0
+offset_top = 373.0
+offset_right = 439.0
+offset_bottom = 438.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 466.0
+offset_top = 134.0
+offset_right = 595.0
+offset_bottom = 199.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 461.0
+offset_top = 213.0
+offset_right = 590.0
+offset_bottom = 278.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 457.0
+offset_top = 294.0
+offset_right = 586.0
+offset_bottom = 359.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 455.0
+offset_top = 367.0
+offset_right = 584.0
+offset_bottom = 432.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button9" type="Button" parent="."]
+offset_left = 625.0
+offset_top = 290.0
+offset_right = 750.0
+offset_bottom = 352.0
+flat = true
+
+[node name="Button10" type="Button" parent="."]
+offset_left = 629.0
+offset_top = 381.0
+offset_right = 758.0
+offset_bottom = 446.0
+flat = true
+
+[node name="giaohang" type="Button" parent="."]
+offset_left = 586.0
+offset_top = 470.0
+offset_right = 850.0
+offset_bottom = 573.0
+text = "giao hang
+"
+flat = true
+
+[node name="pop" type="Button" parent="."]
+offset_left = 306.0
+offset_top = 470.0
+offset_right = 568.0
+offset_bottom = 565.0
+text = "lay ra
+"
+flat = true
+
+[node name="error_count" type="Label" parent="."]
+offset_left = 680.0
+offset_top = 170.0
+offset_right = 821.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(744, 138)
+scale = Vector2(0.23, 0.23)
+
+[node name="check_tick" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(427, 144)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="check_tick2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(417, 216)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="check_tick3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(419, 299)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="check_tick4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(412, 372)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="check_tick5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(571, 139)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="check_tick6" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(572, 222)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="check_tick7" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(579, 303)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="check_tick8" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(574, 378)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="check_tick9" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(731, 294)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="check_tick10" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(729, 386)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("3_saw2j")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="Node2" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="Node3" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="Node4" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="Node5" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="Node6" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="Node7" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="Node8" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="Node9" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="Node10" type="Node" parent="."]
+script = ExtResource("4_mlnux")
+count = 10
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_ywejk")
+bus = &"SFX"
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="Button10" to="." method="_on_button_10_pressed"]
+[connection signal="pressed" from="giaohang" to="." method="_on_de_queue_pressed"]
+[connection signal="pressed" from="pop" to="." method="_on_pop_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

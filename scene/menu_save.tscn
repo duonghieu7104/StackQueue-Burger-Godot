@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0kcdyfmi63yn"]
+
+[ext_resource type="Script" path="res://script/menu_save.gd" id="1_vv2s5"]
+[ext_resource type="Texture2D" uid="uid://d348bgtra5iby" path="res://asset/GUI/menu_setting.png" id="2_37qa2"]
+[ext_resource type="PackedScene" uid="uid://dbu1ynp07orml" path="res://scene/save_load.tscn" id="2_ou171"]
+[ext_resource type="AudioStream" uid="uid://b3rswav83e3an" path="res://sound/pickupCoin.wav" id="4_pmvam"]
+[ext_resource type="PackedScene" uid="uid://jtntgeeco5hs" path="res://scene/ui.tscn" id="5_sa4ax"]
+
+[node name="menu_save" type="Node2D"]
+script = ExtResource("1_vv2s5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(581, 310)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_37qa2")
+
+[node name="save_load" parent="." instance=ExtResource("2_ou171")]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 414.0
+offset_top = 305.0
+offset_right = 504.0
+offset_bottom = 337.0
+flat = true
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 534.0
+offset_top = 305.0
+offset_right = 623.0
+offset_bottom = 337.0
+flat = true
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 652.0
+offset_top = 305.0
+offset_right = 738.0
+offset_bottom = 338.0
+flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_pmvam")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="UI" parent="." instance=ExtResource("5_sa4ax")]
+offset = Vector2(20, 90)
+transform = Transform2D(1, 0, 0, 1, 20, 90)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

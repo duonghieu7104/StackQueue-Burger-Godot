@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bf0dplmbpid8m"
+path="res://.godot/imported/mixkit-pilates-and-yoga-419 (mp3cut.net).mp3-b643534aecf2954eaaeda8632b1c22a5.mp3str"
+
+[deps]
+
+source_file="res://sound/mixkit-pilates-and-yoga-419 (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/mixkit-pilates-and-yoga-419 (mp3cut.net).mp3-b643534aecf2954eaaeda8632b1c22a5.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
