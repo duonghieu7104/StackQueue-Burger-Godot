@@ -29,7 +29,7 @@ In this game, characters will move around a map and head to the food counter whe
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/simple-2d-pixel-game.git
+   git clone https://github.com/duonghieu7104/StackQueue-Burger-Godot.git
    ```
 
 2. **Open the project in Godot 4.1.1**: 
