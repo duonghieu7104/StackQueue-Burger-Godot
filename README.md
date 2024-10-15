@@ -12,6 +12,12 @@ In this game, characters will move around a map and head to the food counter whe
 - If the player delivers the correct burger, they earn money; delivering the wrong burger will result in a penalty.
 - Money can be used to buy more ingredients to keep the food counter running.
 
+## Demo
+
+![1](https://github.com/user-attachments/assets/b1000d60-381f-40a9-9a52-cb29a5c90f1d)
+![2](https://github.com/user-attachments/assets/bd95b12e-1657-45ef-b608-560129f941ef)
+
+
 ## Key Features
 
 - **Queue System**: Hungry characters wait in line at the food counter.
